@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+
+.navbarContainer {
+  height: 10%;
+  width: 100%;
+  background: #f8f8f8 0% 0% no-repeat padding-box;
+  opacity: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.profil {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 80px;
+}
+
+.profil .pseudo {
+  font: normal normal bold 18px/22px Lato;
+}
+
+.profil img {
+  width: 47px;
+  height: 47px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
