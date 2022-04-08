@@ -6,7 +6,6 @@ import '../assets/css/MainContent.css'
 function MainContent() {
   return (
     <div className='mainContent'>
-        <div className='separatorContent'></div>
         <Navbar/>
         <Dashboard/>
 
