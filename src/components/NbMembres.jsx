@@ -1,102 +1,26 @@
 import React from "react";
-import '../assets/css/NbMembres.css'
+import "../assets/css/NbMembres.css";
+import { membreDatas } from "../datas/membreDatas";
+import NbMembersRow from "./NbMembersRow";
 
 function NbMembres() {
   return (
     <div class="nombre-membres">
       <h2>Nombre de membres</h2>
-      <div class="block-membres">
-        <div class="barre-membres">
-          <div class="barre-membre-content">
-            <div class="localisation">
-              <h4>Pays</h4>
-              <h5>France</h5>
+      <ul>
+        {membreDatas.map(
+          ({ id, typeZone, nameZone, nbMembres, moyenneNat }) => (
+            <div class="block-membres" key={id}>
+              <NbMembersRow
+                typeZone={typeZone}
+                nameZone={nameZone}
+                nbMembres={nbMembres}
+                moyenneNat={moyenneNat}
+              />
             </div>
-            <div class="total-block">
-              <div class="total-membres">256</div>
-            </div>
-          </div>
-          <div class="average">
-            <div class="moy-titre">Moy nat.</div>
-            <div class="moy-result">25 000</div>
-          </div>
-        </div>
-        <div class="barre-membres">
-          <div class="barre-membre-content">
-            <div class="localisation">
-              <h4>Pays</h4>
-              <h5>France</h5>
-            </div>
-            <div class="total-block">
-              <div class="total-membres">256</div>
-            </div>
-          </div>
-          <div class="average">
-            <div class="moy-titre">Moy nat.</div>
-            <div class="moy-result">25 000</div>
-          </div>
-        </div>
-        <div class="barre-membres">
-          <div class="barre-membre-content">
-            <div class="localisation">
-              <h4>Pays</h4>
-              <h5>France</h5>
-            </div>
-            <div class="total-block">
-              <div class="total-membres">256</div>
-            </div>
-          </div>
-          <div class="average">
-            <div class="moy-titre">Moy nat.</div>
-            <div class="moy-result">25 000</div>
-          </div>
-        </div>
-        <div class="barre-membres">
-          <div class="barre-membre-content">
-            <div class="localisation">
-              <h4>Pays</h4>
-              <h5>France</h5>
-            </div>
-            <div class="total-block">
-              <div class="total-membres">256</div>
-            </div>
-          </div>
-          <div class="average">
-            <div class="moy-titre">Moy nat.</div>
-            <div class="moy-result">25 000</div>
-          </div>
-        </div>
-        <div class="barre-membres">
-          <div class="barre-membre-content">
-            <div class="localisation">
-              <h4>Pays</h4>
-              <h5>France</h5>
-            </div>
-            <div class="total-block">
-              <div class="total-membres">256</div>
-            </div>
-          </div>
-          <div class="average">
-            <div class="moy-titre">Moy nat.</div>
-            <div class="moy-result">25 000</div>
-          </div>
-        </div>
-        <div class="barre-membres">
-          <div class="barre-membre-content">
-            <div class="localisation">
-              <h4>Pays</h4>
-              <h5>France</h5>
-            </div>
-            <div class="total-block">
-              <div class="total-membres">256</div>
-            </div>
-          </div>
-          <div class="average">
-            <div class="moy-titre">Moy nat.</div>
-            <div class="moy-result">25 000</div>
-          </div>
-        </div>
-      </div>
+          )
+        )}
+      </ul>
     </div>
   );
 }

@@ -1,9 +1,8 @@
 import React from 'react'
 import '../assets/css/Dashboard.css'
-import { ProgressObjectifYear } from '../datas/ProgressObjectifYear';
-import { MembreDatas } from '../datas/MembreDatas';
 import NbMembres from './NbMembres';
 import ProgressObjectif from './ProgressObjectif';
+import "../assets/css/NbMembres.css";
 
 const Dashboard = () => {
   return (

@@ -9,7 +9,7 @@
   width: 49%;
   padding-right: 1.5rem;
 }
-.progress-mois {
+.progress-month {
   width: 100%;
   display: flex;
   align-items: center;
@@ -17,7 +17,7 @@
   padding-right: 1rem;
 }
 
-.progress-mois .mois {
+.progress-month .month {
   margin-right: 3.13rem;
   font: normal normal bold 1.25rem/0.88rem Lato;
   letter-spacing: 0px;
@@ -38,13 +38,12 @@
 
 .progress-bar .jauge {
   background: #dadada;
-  width: 80%;
   height: 75%;
   border-radius: 50px;
-  margin-top: 0.34rem;
+  margin-top: 0.4rem;
 }
 
-.progress-mois .objectif {
+.progress-month .objectif {
   margin-left: 1.25rem;
   font: normal normal bold 1.25rem/0.88rem Lato;
   color: #3e3e3e;
@@ -100,14 +99,13 @@
     width: 98%;
   }
 
-  .progress-mois {
-      width: 95%;
+  .progress-month {
+    width: 95%;
   }
 
-      .progress-membres h2 {
+  .progress-membres h2 {
     margin: 4rem 0.1rem;
     padding: 0;
     justify-content: center;
-        
-    }
+  }
 }
