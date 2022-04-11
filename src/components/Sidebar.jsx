@@ -3,10 +3,15 @@ import { icons } from "react-icons";
 import "../assets/css/Sidebar.css";
 import Logo from "../assets/img/logo.png";
 import LogoMini from "../assets/img/logo1.png";
-import { BsCalendar4Week } from "react-icons/bs";
+import { BsCalendar4Week, BsPerson } from "react-icons/bs";
 import { GrGroup } from "react-icons/gr";
 import { AiOutlineUsergroupAdd, AiFillEuroCircle } from "react-icons/ai";
-import { MdAddLink, MdMediation, MdOutlinePrivacyTip } from "react-icons/md";
+import {
+  MdAddLink,
+  MdMediation,
+  MdOutlinePrivacyTip,
+  MdOutlineSettings,
+} from "react-icons/md";
 import { BiCookie } from 'react-icons/bi'
 
 function Sidebar() {
@@ -52,6 +57,10 @@ function Sidebar() {
             <li>
               <MdMediation className="icon" />
               <div className="navLink">Média</div>
+            </li>
+            <li>
+              <BsPerson className="icon" />
+              <div className="navLink">Profil</div>
             </li>
           </ul>
         </nav>

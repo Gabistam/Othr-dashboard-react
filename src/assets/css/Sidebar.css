@@ -65,17 +65,19 @@ nav .ul-item li {
 nav .ul-item li:hover {
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 50px;
-  width: 215px;
-  height: 38px;
+  width: 13.48rem;
+  height: 2.38rem;
   display: flex;
   justify-content: center;
   align-items: center;
-    background: linear-gradient(
+  background: linear-gradient(
     55deg,
     rgba(71, 69, 226, 1) 0%,
     rgba(253, 29, 29, 1) 50%,
     rgba(252, 176, 69, 1) 100%
   );
+  transform: translate(-0.7rem);
+  transition: 0.5s;
 }
 
 nav .ul-item li .icon {
@@ -116,20 +118,46 @@ nav .ul-item li .icon {
 .mentions-legales li:hover {
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 50px;
-  width: 215px;
-  height: 38px;
+  width: 13.48rem;
+  height: 2.38rem;
   display: flex;
   justify-content: center;
   align-items: center;
-    background: linear-gradient(
+  background: linear-gradient(
     55deg,
     rgba(71, 69, 226, 1) 0%,
     rgba(253, 29, 29, 1) 50%,
     rgba(252, 176, 69, 1) 100%
   );
+  transform: translatex(-0.7rem);
+  transition: 0.5s;
 }
 
+@media screen and (max-width: 500px) {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem;
+  }
 
+  .mentions-legales {
+    margin: 2rem 0.5rem;
+    padding-inline-start: 0;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  nav .ul-item {
+    padding-inline-start: 0;
+  }
+
+  nav .ul-item li .icon {
+    font-size: 1.5rem;
+  }
+}
 
 @media screen and (min-width: 900px) {
   .logoMini {
@@ -165,32 +193,17 @@ nav .ul-item li .icon {
   nav .ul-item li .icon {
     font-size: 2.5rem;
   }
-}
 
-@media screen and (max-width: 500px) {
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0rem;
+  nav .ul-item li:hover {
+    width: 4rem;
+    height: 3rem;
+    transform: translatex(-0.2rem);
   }
 
-  .mentions-legales {
-    margin: 2rem 0.5rem;
-        padding-inline-start: 0;
-
-  }
-
-  .icon {
-    font-size: 1.5rem;
-  }
-
-  nav .ul-item {
-    padding-inline-start: 0;
-  }
-
-  nav .ul-item li .icon {
-    font-size: 1.5rem;
+  .mentions-legales li:hover {
+    width: 4rem;
+    height: 3rem;
+    transform: translatex(-0.2rem);
   }
 }
 
@@ -201,6 +214,24 @@ nav .ul-item li .icon {
 
   .mentions-legales {
     padding-inline-start: 1rem;
+  }
+
+  nav .ul-item li:hover {
+    width: 9rem;
+  }
+
+  .mentions-legales li:hover {
+    width: 9rem;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+  nav .ul-item li:hover {
+    width: 12rem;
+  }
+
+  .mentions-legales li:hover {
+    width: 12rem;
   }
 }
 
