@@ -1,0 +1,113 @@
+.block-progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+}
+
+.progress-membres {
+  width: 49%;
+  padding-right: 1.5rem;
+}
+.progress-mois {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.63rem;
+  padding-right: 1rem;
+}
+
+.progress-mois .mois {
+  margin-right: 3.13rem;
+  font: normal normal bold 1.25rem/0.88rem Lato;
+  letter-spacing: 0px;
+  color: #3e3e3e;
+}
+
+.progress-bar {
+  width: 41rem;
+  height: 2.81rem;
+  opacity: 1;
+  display: flex;
+  border-radius: 50px;
+  background: #f2f2f2;
+  box-shadow: inset 5px 5px 0.63rem #dad9d9d0, inset -5px -5px 0.63rem #ffffff;
+  padding-left: 0.63rem;
+  padding-right: 0.63rem;
+}
+
+.progress-bar .jauge {
+  background: #dadada;
+  width: 80%;
+  height: 75%;
+  border-radius: 50px;
+  margin-top: 0.34rem;
+}
+
+.progress-mois .objectif {
+  margin-left: 1.25rem;
+  font: normal normal bold 1.25rem/0.88rem Lato;
+  color: #3e3e3e;
+}
+
+.row-total {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 3.13rem 4.69rem;
+  align-items: center;
+}
+
+.objectif-year {
+  font: normal normal 900 1.25rem/0.88rem Lato;
+  margin-right: 1.88rem;
+}
+
+.bar-total {
+  display: flex;
+  flex-direction: row;
+  width: 15.44rem;
+  height: 2.88rem;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.total-year {
+  width: 70%;
+  text-align: center;
+  font: normal normal bold 1.44rem/0.94rem Lato;
+}
+
+.percent-objectif-year {
+  background: #008ad1 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 50px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: normal normal bold 1.44rem/0.94rem Lato;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  .progress-membres {
+    margin: 1rem 1rem;
+    width: 98%;
+  }
+
+  .progress-mois {
+      width: 95%;
+  }
+
+      .progress-membres h2 {
+    margin: 4rem 0.1rem;
+    padding: 0;
+    justify-content: center;
+        
+    }
+}
